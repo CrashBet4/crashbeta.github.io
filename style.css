@@ -149,3 +149,55 @@ font-family: "Playwrite ES Deco", cursive;
             object-fit: cover;
 
         }
+nav ul li a {
+    display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+                .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        nav ul li {
+    /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Elimina los márgenes */
+    margin: 0;
+    position: relative;
+}
+
