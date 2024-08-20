@@ -31,6 +31,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="AboutMe.html">About me</a></li>
+            <li><a href="portfolios.html">Portfolios</a></li>
             <li>
                <a href="contact.html">Contact</a>
                 <ul>
@@ -40,59 +41,38 @@
         </ul>
     </nav>
     <!-- Contenido principal de la página -->
-    <main>
+  <main>
         <section>
-            <img src="ABOUTME.png" width="500">
-            <h2>Dale un vistazo a unas cuantas fotografias de mi portafolio</h2>
+            <h2>About me</h2>
+
+
+My name is Joel Jesus Luna <p> </p>
+Almaguer, my pseudonym is 
+CrashBet4, I’m 23 years old, 
+I’m from Durango Dgo. <p> </p>
+Mexico, I’m currently 
+studying Digital Design at  
+Universidad Tecnologica de <p> </p>
+Durango in 8th 
+quarter. </p>
+
+<h2> Check my habilities in some softwares </h2>
+            <p>
+                <img src="ABOUTME.png">
+
+            </p>
+
+            <img src="mono.png" width="500">
+            <p>
+            </p>
+
         </section>
-         <!-- Contenedor principal del slider -->
-    <div class="slider-container">
-        <!-- Contenedor de las imágenes -->
-        <div class="slider-content">
-            <!-- Primera imagen del slider -->
-            <div class="slider-item">
-                <img src="Imagen 1.png" alt="Imagen 1">
-            </div>
-            <!-- Segunda imagen del slider -->
-            <div class="slider-item">
-                <img src="Imagen 2.png" alt="Imagen 2">
-            </div>
-            <!-- Tercera imagen del slider -->
-            <div class="slider-item">
-                <img src="Imagen 3.png" alt="Imagen 3">
-            </div>
-        </div>
-    </div>
     </main>
     <!-- Pie de página del sitio -->
     <footer>
         <p>&copy; Mi pagina Joel Luna Almaguer</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let slideIndex = 0; // Inicializa el índice de las imágenes
-
-            // Obtiene todas las imágenes del slider
-            const slides = document.querySelectorAll(".slider-item");
-            const totalSlides = slides.length; // Calcula el número total de imágenes
-
-            // Función para mostrar las imágenes del slider
-            function showSlides() {
-                slides.forEach(slide => {
-                    slide.style.display = "none"; // Oculta todas las imágenes
-                });
-
-                slideIndex++; // Aumenta el índice de la imagen actual
-                if (slideIndex > totalSlides) { slideIndex = 1; } // Reinicia el índice si es mayor que el número total de imágenes
-
-                slides[slideIndex - 1].style.display = "block"; // Muestra la imagen actual
-                setTimeout(showSlides, 2000); // Cambia de imagen cada 2 segundos
-            }
-
-            showSlides(); // Inicia la función para mostrar las imágenes
-        });
-    </script>
     
 </body>
 </html>
